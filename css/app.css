@@ -1,0 +1,51 @@
+body {
+  background-color: white; }
+
+.header {
+  text-color: #4F4F50;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  text-align: center;
+  padding-top: 10;
+  font-size: 40; }
+
+.menu {
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .menu .active {
+    font-weight: bold; }
+  .menu a {
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    color: #4F4F50;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none; }
+    .menu a:hover {
+      -webkit-transform: scale(1.15, 1.15);
+      -ms-transform: scale(1.15, 1.15);
+      transform: scale(1.15, 1.15);
+      text-shadow: 5px 5px 10px #B6CFEC;
+      -webkit-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -o-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.text-smaller {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18;
+  vertical-align: middle;
+  color: #4F4F50;
+  display: block;
+  margin: auto;
+  text-align: center;
+  line-height: 200%; }
+  .text-smaller a {
+    color: #4F4F50; }
+
+.triangle-image {
+  margin: auto;
+  display: block;
+  height: 300px; }

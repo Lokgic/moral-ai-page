@@ -180,7 +180,8 @@ body {
     /* Safari */
     transform: rotateY(180deg);
     width: 600px;
-    outline: 0; }
+    outline: 0;
+    visibility: hidden; }
   .bubble .bubble-text {
     margin: auto;
     color: #4F4F50;

@@ -101,6 +101,17 @@ body {
 .member-photo {
   align-self: center;
   width:40%;
+  border-radius: 10px;
+  position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  &:hover {
+
+      transform: scale(1.05, 1.05);
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
 }
 
 .member {
@@ -124,23 +135,33 @@ body {
 .project-space {
   
   display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
 }
 
 .bubble {
 
-  display: flex;
+  background-color: white;
   margin: auto;
+  display: flex;
   border: solid black;
   border-radius: 200px;
   width: 200px;
   height: 200px;
+  transition: all 2.0s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   &:hover {
 
-      transform: scale(1.15, 1.15);
-      text-shadow: 5px 5px 10px #B6CFEC;
-      transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -webkit-transform: scale(1.20, 1.20); /* Safari */
+      transform: scale(1.20, 1.20);
   }
+
+  &:focus {
+        -webkit-transform: rotateY(180deg); /* Safari */
+        transform: rotateY(180deg);
+        width: 600px;
+        outline: 0;
+    }
 
   .bubble-text {
   

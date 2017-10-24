@@ -112,7 +112,19 @@ body {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  width: 40%; }
+  width: 40%;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  .member-photo:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .member {
   text-color: #4F4F50;
@@ -133,26 +145,42 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row wrap;
+  -ms-flex-direction: row wrap;
+  flex-direction: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .bubble {
+  background-color: white;
+  margin: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   border: solid black;
   border-radius: 200px;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  -webkit-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1); }
   .bubble:hover {
-    -webkit-transform: scale(1.15, 1.15);
-    -ms-transform: scale(1.15, 1.15);
-    transform: scale(1.15, 1.15);
-    text-shadow: 5px 5px 10px #B6CFEC;
-    -webkit-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    -webkit-transform: scale(1.2, 1.2);
+    /* Safari */
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); }
+  .bubble:focus {
+    -webkit-transform: rotateY(180deg);
+    /* Safari */
+    transform: rotateY(180deg);
+    width: 600px;
+    outline: 0; }
   .bubble .bubble-text {
     margin: auto;
     color: #4F4F50;

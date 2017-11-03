@@ -4,6 +4,24 @@
   <head>
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script>
+      function expandP0() {
+          document.getElementById("tech-trust-text").innerHTML = "A project aiming to devise a multi-stakeholder certification process aimed at cultivating responsible technology that positively impacts society."
+      } 
+
+      function closeP0() {
+          document.getElementById("tech-trust-text").innerHTML = "Tech Trust"
+      } 
+
+      function expandP1() {
+          document.getElementById("kidney-exchange-text").innerHTML = "In a kidney exchange, patients in need of a kidney transplant who have a willing but medically incompatible donor can attempt to exchange their donors.  Determining the optimal way to match patients and donors is a computationally challenging problem, for which algorithms developed in the AI community are already being used.  The simplest approach is to maximize the number of matches. But what if we were willing to prioritize based on a certain patient attribute, such as age?  Are we willing to prioritize younger patients?  Break ties towards younger patients?  We asked online participants for attributes that they felt comfortable prioritizing on, and asked them comparison queries to assess how much they valued these attributes. We adapted a kidney exchange algorithm to take the results into account and investigated the effects in a simulated exchange.  See the paper here."
+      } 
+
+      function closeP1() {
+          document.getElementById("kidney-exchange-text").innerHTML = "Moral Kidney Exchanges"
+      } 
+
+    </script>
   </head>
 
   <body>
@@ -24,15 +42,15 @@
     </div>
     <div class="projects-space">
 
-      <button class="bubble"> 
-        <div class="bubble-text">
+      <button class="bubble" onfocus="expandP0()" onfocusout="closeP0()"> 
+        <div class="bubble-text" id="tech-trust-text">
           Tech Trust
         </div>
       </button> 
 
-      <button class="bubble"> 
-        <div class="bubble-text">
-          Kidney Exchange
+      <button class="bubble" onfocus="expandP1()" onfocusout="closeP1()"> 
+        <div class="bubble-text" id="kidney-exchange-text">
+          Moral Kidney Exchanges
         </div>
       </button> 
       

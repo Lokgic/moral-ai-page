@@ -174,7 +174,8 @@ body {
     -webkit-transform: scale(1.2, 1.2);
     /* Safari */
     -ms-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2); }
+    transform: scale(1.2, 1.2);
+    cursor: pointer; }
   .bubble:focus {
     display: -webkit-box;
     display: -webkit-flex;
@@ -203,3 +204,72 @@ body {
     -webkit-transition-delay: 0.15s;
     -o-transition-delay: 0.15s;
     transition-delay: 0.15s; }
+
+.funder-link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 300%; }
+  .funder-link:hover {
+    -webkit-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+    text-shadow: 5px 5px 10px #B6CFEC;
+    -webkit-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.resource-section {
+  display: block; }
+
+.resources-header {
+  font-family: 'Montserrat', sans-serif, bold;
+  text-shadow: 1px 1px 10px #B6CFEC;
+  font-size: 28;
+  color: #4F4F50;
+  display: block;
+  line-height: 200%;
+  text-align: center; }
+
+.resource-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.resource {
+  float: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  width: 180px; }
+  .resource:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .resource img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto; }
+
+.resource-descript {
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16;
+  color: #4F4F50;
+  display: block;
+  text-align: center; }

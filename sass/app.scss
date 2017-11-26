@@ -1,10 +1,9 @@
 
 body {
-  background-color:white;
+  background-image: url("logo2x.png");
 }
 
 .main-page-background {
-  background-image: url("logo.png");
 }
 
 .header {
@@ -80,6 +79,11 @@ body {
   overflow: hidden;
 }
 
+.robot-hand-image {
+
+  width: 100%;
+}
+
 .team-member-column-1 {
   display: flex;
   justify-content: center;
@@ -129,7 +133,23 @@ body {
   margin: auto;
   text-align: center;
   line-height: 150%;
-  padding: 50;
+  padding-top: 30;
+  padding-bottom: 50;
+  padding-right: 50;
+  padding-left: 50;
+}
+
+.alumni-tag {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20;
+  color: black;
+  text-shadow: 2px 2px 1px #B6CFEC;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-bottom: -50;
+  padding-top: 30;
 }
 
 .project-space {

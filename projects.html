@@ -5,21 +5,57 @@
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script>
-      function expandP0() {
-          document.getElementById("tech-trust-text").innerHTML = "A project aiming to devise a multi-stakeholder certification process aimed at cultivating responsible technology that positively impacts society."
+      function expandBubble(num) {
+
+        var content;
+        switch (num) {
+          case 0: 
+            content = "In a kidney exchange, patients in need of a kidney transplant who have a willing but medically incompatible donor can attempt to exchange their donors.  Determining the optimal way to match patients and donors is a computationally challenging problem, for which algorithms developed in the AI community are already being used.  The simplest approach is to maximize the number of matches. But what if we were willing to prioritize based on a certain patient attribute, such as age?  Are we willing to prioritize younger patients?  Break ties towards younger patients?  We asked online participants for attributes that they felt comfortable prioritizing on, and asked them comparison queries to assess how much they valued these attributes. We adapted a kidney exchange algorithm to take the results into account and investigated the effects in a simulated exchange.";
+            document.getElementById("kidney-exchange-text").innerHTML = content;
+            break;
+
+          case 1:
+            content = "A project aiming to devise a multi-stakeholder certification process aimed at cultivating responsible technology that positively impacts society.";
+            document.getElementById("tech-trust-text").innerHTML = content;
+            break;
+
+          case 2:
+            content = "The trust game project is a game theoretics study incorporating an ethical component.";
+            document.getElementById("trust-game").innerHTML = content;
+            break;
+
+          case 3:
+            content = "This project was a precursor to much of the research featured above. The goal of this study was to assess general sentiment towards AI making decisions in our daily lives and what sort of tasks in which people are comfortable with letting AI participate. Going further, this project investigated whether exposure to information about AI efficacy or current use of AI would change these opinions.";
+            document.getElementById("ai-attitudes").innerHTML = content;
+            break;
+        }
       } 
 
-      function closeP0() {
-          document.getElementById("tech-trust-text").innerHTML = "Tech Trust"
-          document.getElementById("tech-trust-text").fontSize = "10"
-      } 
+      function closeBubble(num) {
 
-      function expandP1() {
-          document.getElementById("kidney-exchange-text").innerHTML = "In a kidney exchange, patients in need of a kidney transplant who have a willing but medically incompatible donor can attempt to exchange their donors.  Determining the optimal way to match patients and donors is a computationally challenging problem, for which algorithms developed in the AI community are already being used.  The simplest approach is to maximize the number of matches. But what if we were willing to prioritize based on a certain patient attribute, such as age?  Are we willing to prioritize younger patients?  Break ties towards younger patients?  We asked online participants for attributes that they felt comfortable prioritizing on, and asked them comparison queries to assess how much they valued these attributes. We adapted a kidney exchange algorithm to take the results into account and investigated the effects in a simulated exchange.  See the paper here."
-      } 
+        var content;
+        switch (num) {
+          case 0:
+            content = "Moral Kidney Exchange";
+            document.getElementById("kidney-exchange-text").innerHTML = content;
+            break;
 
-      function closeP1() {
-          document.getElementById("kidney-exchange-text").innerHTML = "Moral Kidney Exchanges"
+          case 1: 
+            content = "Tech Trust";
+            document.getElementById("tech-trust-text").fontSize = "10"
+            document.getElementById("tech-trust-text").innerHTML = content;
+            break;
+
+          case 2:
+            content = "Trust Game";
+            document.getElementById("trust-game").innerHTML = content;
+            break;
+
+          case 3:
+            content = "Attitudes towards AI";
+            document.getElementById("ai-attitudes").innerHTML = content;
+            break;
+        }
       } 
 
     </script>
@@ -41,32 +77,39 @@
       our projects
       </h1>
     </div>
+
     <div class="projects-space">
 
-      <button class="bubble" onfocus="expandP1()" onfocusout="closeP1()"> 
+      <button class="bubble" onfocus="expandBubble(0)" onfocusout="closeBubble(0)"> 
         <div class="bubble-text" id="kidney-exchange-text">
           Moral Kidney Exchange
         </div>
       </button> 
 
-      <button class="bubble" onfocus="expandP0()" onfocusout="closeP0()"> 
+      <button class="bubble" onfocus="expandBubble(1)" onfocusout="closeBubble(1)"> 
         <div class="bubble-text" id="tech-trust-text">
           Tech Trust
         </div>
       </button> 
 
-      <button class="bubble"> 
-        <div class="bubble-text">
+      <button class="bubble" onfocus="expandBubble(2)" onfocusout="closeBubble(2)"> 
+        <div class="bubble-text" id="trust-game">
           Trust Game
         </div>
       </button> 
 
-      <button class="bubble"> 
-        <div class="bubble-text">
+      <button class="bubble" onfocus="expandBubble(3)" onfocusout="closeBubble(3)"> 
+        <div class="bubble-text" id="ai-attitudes">
           Attitudes towards AI
         </div>
       </button> 
 
+    </div>
+
+    <div class="header">
+      <h1>
+      our publications
+      </h1>
     </div>
   </body>
 

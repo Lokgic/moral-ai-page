@@ -10,6 +10,10 @@ body {
   font-size: 40;
   z-index: 10; }
 
+.header-link {
+  text-decoration: none;
+  text-shadow: 5px 5px 5px #B6CFEC; }
+
 .menu {
   margin: auto;
   display: -webkit-box;
@@ -22,6 +26,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: inline;
     color: #4F4F50;
+    font-size: 18;
     padding: 20px 20px;
     text-align: center;
     text-decoration: none; }
@@ -36,7 +41,7 @@ body {
 
 .text-smaller {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18;
+  font-size: 20;
   vertical-align: middle;
   color: #4F4F50;
   display: block;
@@ -45,8 +50,13 @@ body {
   line-height: 200%; }
   .text-smaller a {
     color: #4F4F50; }
+    .text-smaller a:hover {
+      color: #a2c2e7; }
+  .text-smaller .blue-back {
+    background-color: rgba(182, 207, 236, 0.6); }
 
 .triangle-image {
+  padding-top: 15px;
   margin: auto;
   display: block;
   height: 300px; }
@@ -105,7 +115,7 @@ body {
   flex-direction: column;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 50%;
+  max-width: 50%;
   float: right; }
 
 .member-photo {
@@ -189,7 +199,12 @@ body {
     /* Safari */
     -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
-    cursor: pointer; }
+    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    background-color: #B6CFEC;
+    text-shadow: 0px 0px 5px white; }
   .bubble:focus {
     display: -webkit-box;
     display: -webkit-flex;
@@ -227,7 +242,7 @@ body {
     -webkit-transform: scale(1.15, 1.15);
     -ms-transform: scale(1.15, 1.15);
     transform: scale(1.15, 1.15);
-    text-shadow: 5px 5px 10px #B6CFEC;
+    text-shadow: 5px 5px 10px white;
     -webkit-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
     -o-transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1); }
@@ -238,7 +253,7 @@ body {
 .resources-header {
   font-family: 'Montserrat', sans-serif, bold;
   text-shadow: 1px 1px 10px #B6CFEC;
-  font-size: 28;
+  font-size: 32;
   color: #4F4F50;
   display: block;
   line-height: 200%;
@@ -260,25 +275,75 @@ body {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative;
+  overflow: hidden; }
+
+.news-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  overflow: hidden; }
 
 .resource {
-  float: top;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 5px;
-  width: 130px; }
-  .resource:hover {
-    -webkit-transform: scale(1.05, 1.05);
-    -ms-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
-    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  margin: 5px; }
   .resource img {
+    width: 130px;
     border-radius: 10px;
-    width: 100%;
     height: auto; }
+    .resource img:hover {
+      -webkit-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05);
+      -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .resource a {
+    text-decoration: none; }
+  .resource .news-obj {
+    width: 200;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20;
+    text-align: center;
+    color: #4F4F50;
+    border-style: solid;
+    border-width: 3px;
+    position: relative; }
+    .resource .news-obj .news-text {
+      padding: 20px;
+      margin: auto; }
+    .resource .news-obj:hover {
+      -webkit-transform: scale(1.1, 1.1);
+      /* Safari */
+      -ms-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+      -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      cursor: pointer;
+      background-color: #B6CFEC;
+      text-shadow: 0px 0px 5px white; }
 
 .resource-descript {
   padding: 15px;

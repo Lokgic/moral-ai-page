@@ -68,9 +68,6 @@ body {
     }
   }
 
-  .blue-back {
-    background-color: rgba(182, 207, 236, 0.6);
-  }
 }
 
 .triangle-image {
@@ -227,17 +224,35 @@ body {
   }
 }
 
+.funders {
+  
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+
+  .blue-back {
+    background-color: rgba(182, 207, 236, 0.6);
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .funder-link {
   
   text-decoration: none;
   font-size: 20px;
   line-height:300%;
+  font-family: 'Montserrat', sans-serif, bold;
+  color: #4F4F50;
 
   &:hover {
 
-      transform: scale(1.15, 1.15);
       text-shadow: 5px 5px 10px white;
-      transition: all 1.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+      -webkit-transform: scale(1.50, 1.50); /* Safari */
+      transform: scale(1.50, 1.50);
   }
 }
 

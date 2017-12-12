@@ -4,15 +4,12 @@
 
 ## To run the project, complete the following steps 
 
-### 1.[Download PrePros](https://prepros.io)   
-
-### 2. Type the following into your terminal window:
+### 1. Type the following into your terminal window:
 ```
   mkdir ~/Desktop/moralai_website
   cd ~/Desktop/moralai_website
   git clone https://github.com/anikamukherji/moralai_website.git
 ```
 
-### 3. Open PrePros and drag the moralai_website folder (from your Desktop) into the application as a new project
-      
-### 4. Press `CTRL-D` or `CTRL-L` depending on your platform
+### 3. Double click on the project in your Desktop       
+### 4. Double click on `index.html`

@@ -224,14 +224,6 @@ body {
   }
 }
 
-.disclosure {
-  
-  font-size: 10px;
-  font-family: 'Montserrat', sans-serif, bold;
-  color: #4F4F50;
-  text-align: center;
-}
-
 .funders {
   
   display: flex;
@@ -264,6 +256,13 @@ body {
   }
 }
 
+.p {
+
+  .fund-disclosure {
+    
+    font-size: 10px;
+  }
+}
 
 .resource-section {
   

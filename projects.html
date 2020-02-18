@@ -9,7 +9,7 @@
 
         var content;
         switch (num) {
-          case 0: 
+          case 0:
             content = "In a kidney exchange, patients in need of a kidney transplant who have a willing but medically incompatible donor can attempt to exchange their donors.  Determining the optimal way to match patients and donors is a computationally challenging problem, for which algorithms developed in the AI community are already being used.  The simplest approach is to maximize the number of matches. But what if we were willing to prioritize based on a certain patient attribute, such as age?  Are we willing to prioritize younger patients?  Break ties towards younger patients?  We asked online participants for attributes that they felt comfortable prioritizing on, and asked them comparison queries to assess how much they valued these attributes. We adapted a kidney exchange algorithm to take the results into account and investigated the effects in a simulated exchange.";
             document.getElementById("kidney-exchange-text").innerHTML = content;
             break;
@@ -29,7 +29,7 @@
             document.getElementById("ai-attitudes").innerHTML = content;
             break;
         }
-      } 
+      }
 
       function closeBubble(num) {
 
@@ -40,7 +40,7 @@
             document.getElementById("kidney-exchange-text").innerHTML = content;
             break;
 
-          case 1: 
+          case 1:
             content = "Tech Trust";
             document.getElementById("tech-trust-text").fontSize = "10"
             document.getElementById("tech-trust-text").innerHTML = content;
@@ -56,7 +56,7 @@
             document.getElementById("ai-attitudes").innerHTML = content;
             break;
         }
-      } 
+      }
 
     </script>
   </head>
@@ -80,29 +80,29 @@
 
     <div class="projects-space">
 
-      <button class="bubble" onfocus="expandBubble(0)" onfocusout="closeBubble(0)"> 
+      <button class="bubble" onfocus="expandBubble(0)" onfocusout="closeBubble(0)">
         <div class="bubble-text" id="kidney-exchange-text">
           Moral Kidney Exchange
         </div>
-      </button> 
+      </button>
 
-      <button class="bubble" onfocus="expandBubble(1)" onfocusout="closeBubble(1)"> 
+      <button class="bubble" onfocus="expandBubble(1)" onfocusout="closeBubble(1)">
         <div class="bubble-text" id="tech-trust-text">
           Tech Trust
         </div>
-      </button> 
+      </button>
 
-      <button class="bubble" onfocus="expandBubble(2)" onfocusout="closeBubble(2)"> 
+      <button class="bubble" onfocus="expandBubble(2)" onfocusout="closeBubble(2)">
         <div class="bubble-text" id="trust-game">
           Trust Game
         </div>
-      </button> 
+      </button>
 
-      <button class="bubble" onfocus="expandBubble(3)" onfocusout="closeBubble(3)"> 
+      <button class="bubble" onfocus="expandBubble(3)" onfocusout="closeBubble(3)">
         <div class="bubble-text" id="ai-attitudes">
           Attitudes towards AI
         </div>
-      </button> 
+      </button>
 
     </div>
 
@@ -115,6 +115,15 @@
     <div class="resource-section">
 
       <div class="resource-grid">
+
+        <div class="resource">
+          <a target="_blank" href="./documents/mai_docs/AIES2020AAI.pdf">
+            <img src="./images/pub_images/kidneychoice.jpg">
+          </a>
+          <div class="resource-descript">
+            "Artificial Artificial Intelligence: Measuring Influence of AI 'Assessments' on Moral Decision-Making" (Chan, Doyle, McElfresh, Conitzer, Dickerson, Schaich Borg, Sinnott Armstrong 2020)
+          </div>
+        </div>
 
         <div class="resource">
           <a target="_blank" href="./documents/mai_docs/ethicalWINE08.pdf">
@@ -130,7 +139,7 @@ Two-Player Perfect-Information Games" (Letchford, Conitzer, Jain 2008)
           <a target="_blank" href="./documents/mai_docs/kidneyAAAI18.pdf">
             <img src="./images/pub_images/conitzer_kidney.jpg">
           </a>
-          <div class="resource-descript"> 
+          <div class="resource-descript">
             "Adapting a Kidney Exchange Algorithm to Align with Human Values" (Freedman et al 2018)
           </div>
         </div>
@@ -139,7 +148,7 @@ Two-Player Perfect-Information Games" (Letchford, Conitzer, Jain 2008)
           <a target="_blank" href="./documents/mai_docs/moralAAAI17.pdf">
             <img src="./images/pub_images/conitzer_decisions.jpg">
           </a>
-          <div class="resource-descript"> 
+          <div class="resource-descript">
             "Moral Decision Making Frameworks for Artificial Intelligence" (Conitzer et al 2017)
           </div>
         </div>
